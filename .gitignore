@@ -1,0 +1,7 @@
+/target/
+/campaigns/
+/runs/
+.env
+.env.*
+*.jsonl
+__pycache__/

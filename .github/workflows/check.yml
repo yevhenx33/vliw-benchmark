@@ -1,0 +1,16 @@
+name: Local fixture checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify with local adapters and judges
+        run: |
+          cargo test --locked
+          cargo build --locked
+          target/debug/harness-bench plan examples.json solo challenges/vliw.json
+          target/debug/harness-bench plan examples.json teams challenges/vliw.json

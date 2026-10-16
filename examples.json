@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "seconds": 600,
+  "repeats": 3,
+  "seed": 20261016,
+  "tiers": [
+    "light",
+    "medium",
+    "high",
+    "extra-high"
+  ],
+  "presets": {
+    "solo": [
+      0
+    ],
+    "teams": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "models": [
+    {
+      "id": "gpt-6.1-sol",
+      "adapter": "codex_exec",
+      "program": "codex",
+      "args": [],
+      "tiers": {
+        "light": "low",
+        "medium": "medium",
+        "high": "high",
+        "extra-high": "xhigh"
+      },
+      "max_workers": 5,
+      "expected_version": "codex-cli 0.163.0",
+      "codex_home": null,
+      "pricing": {
+        "label": "Historical 2026-10-15 base API equivalent; excludes priority and other adjustments",
+        "input_per_million": 2,
+        "cached_per_million": 0.1,
+        "output_per_million": 10
+      }
+    }
+  ]
+}
