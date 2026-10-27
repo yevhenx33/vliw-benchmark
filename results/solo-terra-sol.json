@@ -1,0 +1,14 @@
+{
+  "description": "Three valid solo VLIW attempts per model and reasoning tier; independent score and cost medians. Null cost_upper means unbounded above.",
+  "cost_unit": "USD standard-rate API equivalent per attempt, not billed cost",
+  "results": [
+    {"model": "Sol", "tier": "low", "scores": [1208.0, 1284.0, 1164.0], "median_cycles": 1208.0, "cost_lower": 0.5097984, "cost_upper": 0.5097984},
+    {"model": "Sol", "tier": "medium", "scores": [1181.0, 1320.0, 1177.0], "median_cycles": 1181.0, "cost_lower": 0.5342032, "cost_upper": null},
+    {"model": "Sol", "tier": "high", "scores": [1180.0, 1181.0, 1164.0], "median_cycles": 1180.0, "cost_lower": 0.4721420000000001, "cost_upper": 0.4721420000000001},
+    {"model": "Sol", "tier": "extra-high", "scores": [1124.0, 1133.0, 1399.0], "median_cycles": 1133.0, "cost_lower": 0.4868876, "cost_upper": 0.4913336000000001},
+    {"model": "Terra", "tier": "low", "scores": [1342.0, 1208.0, 1194.0], "median_cycles": 1208.0, "cost_lower": 0.3483, "cost_upper": 0.35232480000000005},
+    {"model": "Terra", "tier": "medium", "scores": [1144.0, 1197.0, 1315.0], "median_cycles": 1197.0, "cost_lower": 0.3744614, "cost_upper": 0.40176059999999997},
+    {"model": "Terra", "tier": "high", "scores": [1179.0, 1190.0, 1197.0], "median_cycles": 1190.0, "cost_lower": 0.4050146, "cost_upper": 0.442126},
+    {"model": "Terra", "tier": "extra-high", "scores": [1178.0, 1147.0, 1130.0], "median_cycles": 1147.0, "cost_lower": 0.4699286, "cost_upper": 0.4699286}
+  ]
+}

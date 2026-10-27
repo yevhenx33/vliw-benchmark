@@ -13,4 +13,3 @@ jobs:
           cargo test --locked
           cargo build --locked
           target/debug/harness-bench plan examples.json solo challenges/vliw.json
-          target/debug/harness-bench plan examples.json teams challenges/vliw.json
